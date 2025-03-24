@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
-import Presentation from "@/components/Presentation";
+import PresentationSection from "@/components/PresentationSection";
+import ServiceSection from "@/components/ServiceSection";
 
 export default function Home() {
   return (
     <div>
       <Header />   
-      <Presentation /> 
+      <PresentationSection /> 
+      <ServiceSection />
     </div>
   );
 }
