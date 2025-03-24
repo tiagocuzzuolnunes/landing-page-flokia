@@ -1,15 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary-light: #e6edff;
+  --color-primary-light-hover: #b0c8ff;
+  --color-primary-normal: #014cff;
+  --color-primary-normal-hover: #013dcc;
+  --color-primary-dark: #0139bf;
+  --color-primary-darker: #001b59;
+
+  --color-neutral-light: #fafafa;
+  --color-neutral-light-active: #f0f0f0;
+  --color-neutral-normal: #cdcdcd;
+  --color-neutral-normal-hover: #b9b9b9;
+  --color-neutral-normal-active: #a4a4a4;
+  --color-neutral-dark: #9a9a9a;
+  --color-neutral-dark-hover: #7b7b7b;
+  --color-neutral-dark-active: #5c5c5c;
+  --color-neutral-darker: #484848;
+
+  --color-white-default: #ffffff;
+  --font-weight-logo: 900;
+  --font-weight-heading: 600;
+  --font-weight-subheading-topic: 400;
+  --font-weight-text: 500;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-light-hover: var(--color-primary-light-hover);
+  --color-primary-normal: var(--color-primary-normal);
+  --color-primary-normal-hover: var(--color-primary-normal-hover);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-darker: var(--color-primary-darker);
+
+  --color-neutral-light: var(--color-neutral-light);
+  --color-neutral-light: var(--color-neutral-light-active);
+  --color-neutral-normal: var(--color-neutral-normal);
+  --color-neutral-normal-hover: var(--color-neutral-normal-hover);
+  --color-neutral-normal-active: var(--color-neutral-normal-active);
+  --color-neutral-dark: var(--color-neutral-dark);
+  --color-neutral-dark-hover: var(--color-neutral-dark-hover);
+  --color-neutral-darker: var(--color-neutral-darker);
+
+  --color-white: var(--color-white-default);
+  --font-text: var(--font-poppins);
+  --font-display: var(--font-montserrat);
+  --font-subheading: var(--font-weight-subheading);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +58,6 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif; */
 }
