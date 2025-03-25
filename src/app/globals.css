@@ -45,6 +45,8 @@
   --color-white: var(--color-white-default);
   --font-text: var(--font-poppins);
   --font-display: var(--font-montserrat);
+  --font-logo: var(--font-weight-logo);
+  --font-heading: var(--font-weight-heading);
   --font-subheading: var(--font-weight-subheading);
 
 }
