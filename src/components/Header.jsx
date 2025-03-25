@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MainButton from "./MainButton";
 
 export default function Header() {
     return(
@@ -9,7 +10,7 @@ export default function Header() {
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Sobre Nós</li>
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Como Funciona</li>
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Solicitar Orçamento</li>
-                    <li><button className="bg-primary-normal hover:bg-primary-normal-hover text-white font-bold px-4 py-3 rounded-md cursor-pointer">Cadastre-se</button></li>
+                    <li><MainButton content="Cadastre-se"/></li>
                 </ul>
             </nav>
         </header>
