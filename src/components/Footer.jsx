@@ -1,26 +1,14 @@
 import MainButton from "./MainButton";
 import SocialLogo from "./SocialLogo";
-
-// export default function Footer() {
-//     return (
-//         <section className="bg-primary-darker">
-//             <article></article>
-//             <article><MainButton content="Tire sua Dúvida"/></article>
-//             <article></article>
-//             <article></article>
-//         </section>
-//     )
-// }
-
 import React from "react";
 
 function Footer() {
     return (
-        <section className="bg-primary-darker flex flex-col justify-center items-center p-4">
+        <section className="bg-primary-darker text-white flex flex-col justify-center items-center py-8 px-16">
 
             <div className="grid grid-cols-8">
 
-                <article className="text-white col-span-2">
+                <article className="col-span-2">
 
                     <h4 className="cursor-default font-semibold text-md">
                         Destaques
@@ -85,7 +73,7 @@ function Footer() {
 
                 </article>
 
-                <article className="text-white col-span-2">
+                <article className="col-span-2">
 
                     <h4 className="cursor-default font-semibold text-lg">
                         Precisa de ajuda?
@@ -97,7 +85,7 @@ function Footer() {
 
                 <article>
 
-                    <p className="font-sans text-white font-semibold text-md text-left w-full">
+                    <p className="font-semibold text-md text-left w-full">
                         Siga-nos
                     </p>
 
@@ -112,34 +100,44 @@ function Footer() {
                 </article>
 
                 <article>
-                    <p className="font-sans text-white font-semibold text-md text-left w-full">
+
+                    <p className="font-semibold text-md text-left w-full">
                         Baixe nosso aplicativo
                     </p>
+
                     <div className="mt-1 flex flex-row text-left w-full mb-4 gap-1">
+
                         <SocialLogo src="/appleLogo.svg" alt="Logo da Apple. Clique para instalação de app IOS" className="w-8" />
+
                         <SocialLogo src="/androidLogo.svg" alt="Logo da Android. Clique para instalação de app Android" className="w-8" />
+
                     </div>
+
                 </article>
 
             </div>
 
-            <div className="font-sans text-white font-medium border-t-1 border-b-1 w-full text-center py-2 my-10 text-sm border-gray-400">
+            <div className="font-medium text-sm w-full text-center border-y-1 py-2 my-10 border-gray-400">
                 Compare preços e produtos de grandes marcas.
             </div>
 
-            <span className="font-sans text-white text-sm text-left w-full mt-6">
+            <span className="text-sm text-left w-full mt-6">
                 O uso deste site está sujeito aos termos e condições do <a href="https://github.com/Flokkia" target="_blank" className="underline">Termo de Uso</a> e <a href="https://github.com/Flokkia" target="_blank" className="underline">Política de privacidade</a>.
             </span>
 
-            <span className="font-sans text-white text-sm text-left w-full mt-5">
-                CNPJ: 097738538593 / Rua Capote, 1º andar - São Paulo - SP
-            </span>
+            <div className="w-full grid grid-cols-2 items-center">
 
-            <p className="font-sans text-white text-xs mt-8 mb-4">
-                © Copyrights 2024 - Todos os direitos reservados.
-            </p>
+                <span className="text-sm text-left w-full mt-5 justify-self-start">
+                    CNPJ: 097738538593 / Rua Capote, 1º andar - São Paulo - SP
+                </span>
 
-            <div className="my-2">
+                <p className="text-sm mt-8 mb-4 justify-self-end">
+                    © Copyrights 2024 - Todos os direitos reservados.
+                </p>
+
+            </div>
+
+            <div className="mb-4 mt-16">
                 <img src="/FlokiaLogo2.svg" alt="Logo da Flokia" className="max-w-[15vw]" />
             </div>
 
