@@ -4,7 +4,7 @@ export default function FeedbackCard({ title, image, subtitle, content }) {
         <article className="border-box bg-neutral-light rounded-4xl w-[40vw] h-[500px] max-h-[400px] max-w-[35vw]">
             <div className="flex flex-row items-center">
                 {image.map((url) => (
-                    <img key={url.id} src={url.text} className="p-4"/>
+                    <img key={url.id} src={url.text} draggable="false" className="p-4"/>
                 ))}
                 <div className="flex flex-col">
                     {title.map((name) => (

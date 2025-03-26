@@ -5,6 +5,7 @@ import ShowcaseSection from "@/components/ShowcaseSection";
 import FeedbackSection from "@/components/FeedbackSection";
 import FeedbackCarousel from "@/components/FeedbackCarousel";
 import Footer from "@/components/Footer";
+import FaqSection from "@/components/FaqSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServiceSection />
       <ShowcaseSection />
       {/* <FeedbackSection /> */}
+      <FaqSection />
       <FeedbackCarousel />
       <Footer />
     </div>
