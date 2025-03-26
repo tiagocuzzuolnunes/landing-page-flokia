@@ -4,18 +4,31 @@ import FaqQuestion from "./FaqQuestion";
 
 const consumerQuestions = [
     {
-        title: [{ id: "1", text: "Para Consumidors (B2C)" }],
+
         question: [
-            { id: "1", text: "Como o Cartip encontra os melhores preços?" },
-            { id: "2", text: "O aplicativo Cartip é gratuito?" },
-            { id: "3", text: "Posso encontrar produtos de qualquer supermercado no Cartip?" }
-        ],
-        answer: [
-            { id: "1", text: "Utilizamos tecnologia avançada para monitorar uma ampla gama de supermercados e atualizamos nossos dados em tempo real para garantir que você tenha acesso às ofertas mais recentes e aos melhores preços disponíveis." },
-            { id: "2", text: "Sim, nosso aplicativo é totalmente gratuito para os consumidores. Nosso objetivo é ajudá-lo a economizar dinheiro em suas compras de supermercado." },
-            { id: "3", text: "Trabalhamos com uma ampla rede de supermercados, desde grandes cadeias até estabelecimentos locais. Estamos constantemente expandindo nossa parceria com supermercados para oferecer uma variedade ainda maior de produtos e ofertas." }
+            { id: "1", text: "Como o Cartip encontra os melhores preços?", answer: "Utilizamos tecnologia avançada para monitorar uma ampla gama de supermercados e atualizamos nossos dados em tempo real para garantir que você tenha acesso às ofertas mais recentes e aos melhores preços disponíveis." },
+
         ]
+
+
+    },
+    {
+
+        question: [
+
+            { id: "2", text: "O aplicativo Cartip é gratuito?", answer: "Sim, nosso aplicativo é totalmente gratuito para os consumidores. Nosso objetivo é ajudá-lo a economizar dinheiro em suas compras de supermercado." },
+
+        ],
+    },
+    {
+
+        question: [
+
+            { id: "3", text: "Posso encontrar produtos de qualquer supermercado no Cartip?", answer: "Trabalhamos com uma ampla rede de supermercados, desde grandes cadeias até estabelecimentos locais. Estamos constantemente expandindo nossa parceria com supermercados para oferecer uma variedade ainda maior de produtos e ofertas." }
+        ],
     }
+
+
 ];
 
 const businessQuestions = [
@@ -60,8 +73,10 @@ export default function FaqSection(question, answer) {
 
             <h2 className="text-2xl text-white font-bold">Principais Dúvidas</h2>
 
+            <h3 className="text-white text-xl justify-self-left font-bold" >Para Consumidores (B2C)</h3>
+
             {consumerQuestions.map((info, index) => (
-                <FaqQuestion key={index} {...info}/>
+                <FaqQuestion key={index} {...info} />
             ))}
 
         </section>

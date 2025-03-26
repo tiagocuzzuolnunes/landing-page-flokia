@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function FaqQuestion({ title, question, answer }) {
+export default function FaqQuestion({  question, answer }) {
 
     const [isSelected, setIsSelected] = useState(null);
 
@@ -13,9 +13,9 @@ export default function FaqQuestion({ title, question, answer }) {
 
         <div className="flex flex-col">
 
-            {title.map((titl) => (
-                <h3 key={titl.id}>{titl.text}</h3>
-            ))}
+            {/* {title.map((titl) => (
+                <h3 className="text-white text-xl font-bold" key={titl.id}>{titl.text}</h3>
+            ))} */}
 
             {question.map((quest, index) => (
                 <div key={quest.id} className="flex flex-col justify-center bg-white h-auto w-[70vw] rounded-md py-6 my-6" onClick={() => toggleQuestion(index)}>
@@ -36,15 +36,12 @@ export default function FaqQuestion({ title, question, answer }) {
                             style={{ backgroundColor: isSelected === index ? "#ffffff" : "transparent" }}
                         >
 
-                            {isSelected && <div className="text-neutral-dark pt-6">
+                            <div className="text-neutral-dark pt-6">
 
-                                {answer.map((answ) => (
+                                {quest.answer && <p>{quest.answer}</p>}
 
-                                    <p key={answ.id}>{answ.text}</p>
+                            </div>
 
-                                ))}
-
-                            </div>}
 
                         </div>
 
