@@ -1,24 +1,24 @@
 "use client";
 import { useState } from "react";
 
-export default function FaqQuestion({  question, answer }) {
+export default function FaqQuestion({ question }) {
 
     const [isSelected, setIsSelected] = useState(null);
 
     const toggleQuestion = (index) => {
-        setIsSelected(isSelected === index ? null : index);
+        setIsSelected(prevIndex => (prevIndex === index ? null : index));
     };
 
     return (
 
-        <div className="flex flex-col">
+        <section className="flex flex-col">
 
             {/* {title.map((titl) => (
                 <h3 className="text-white text-xl font-bold" key={titl.id}>{titl.text}</h3>
             ))} */}
 
             {question.map((quest, index) => (
-                <div key={quest.id} className="flex flex-col justify-center bg-white h-auto w-[70vw] rounded-md py-6 my-6" onClick={() => toggleQuestion(index)}>
+                <div key={quest.id} className="flex flex-col justify-center cursor-pointer bg-white h-auto w-[70vw] rounded-md py-6 my-6" onClick={() => toggleQuestion(index)}>
 
                     <div className="flex flex-col w-full justify-between px-4">
 
@@ -32,7 +32,7 @@ export default function FaqQuestion({  question, answer }) {
 
                         </div>
                         <div
-                            className={`transition-all duration-800 ${isSelected === index ? "h-auto py-4" : "h-0"} overflow-hidden ease-in-out`}
+                            className={`transition-all duration-800  ${isSelected === index ? "max-h-[500px] opacity-100 pb-4" : "max-h-0 opacity-0 py-0"} overflow-hidden ease-in-out`}
                             style={{ backgroundColor: isSelected === index ? "#ffffff" : "transparent" }}
                         >
 
@@ -50,7 +50,7 @@ export default function FaqQuestion({  question, answer }) {
                 </div>
             ))}
 
-        </div>
+        </section>
 
     )
 }
