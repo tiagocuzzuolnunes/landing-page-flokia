@@ -7,6 +7,7 @@
   --color-primary-normal-hover: #013dcc;
   --color-primary-dark: #0139bf;
   --color-primary-darker: #001b59;
+  --color-primary-background: #e6edff;
 
   --color-neutral-light: #fafafa;
   --color-neutral-light-active: #f0f0f0;
@@ -32,6 +33,7 @@
   --color-primary-normal-hover: var(--color-primary-normal-hover);
   --color-primary-dark: var(--color-primary-dark);
   --color-primary-darker: var(--color-primary-darker);
+  --color-primary-background: var(--color-primary-background);
 
   --color-neutral-light: var(--color-neutral-light);
   --color-neutral-light: var(--color-neutral-light-active);

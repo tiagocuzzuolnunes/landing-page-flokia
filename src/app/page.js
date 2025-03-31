@@ -2,10 +2,10 @@ import Header from "@/components/Header";
 import PresentationSection from "@/components/PresentationSection";
 import ServiceSection from "@/components/ServiceSection";
 import ShowcaseSection from "@/components/ShowcaseSection";
-import FeedbackSection from "@/components/FeedbackSection";
 import FeedbackCarousel from "@/components/FeedbackCarousel";
-import Footer from "@/components/Footer";
 import FaqSection from "@/components/FaqSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,9 +14,9 @@ export default function Home() {
       <PresentationSection /> 
       <ServiceSection />
       <ShowcaseSection />
-      {/* <FeedbackSection /> */}
-      <FaqSection />
       <FeedbackCarousel />
+      <FaqSection />
+      <ContactSection />
       <Footer />
     </div>
   );
