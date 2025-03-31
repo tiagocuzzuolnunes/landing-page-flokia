@@ -28,38 +28,62 @@ const consumerQuestions = [
         ],
     }
 
-
 ];
 
 const businessQuestions = [
     {
-        title: [{ id: "1", text: "Para Supermercados (B2B)" }],
+
+
         question: [
-            { id: "4", text: "Como posso listar meu supermercado no Cartip?" },
-            { id: "5", text: "Existe um custo para listar meu supermercado no Cartip?" },
-            { id: "6", text: "Como o Cartip pode aumentar minhas vendas?" }
-        ],
-        answer: [
-            { id: "4", text: "Para listar seu supermercado e começar a divulgar suas ofertas no Cartip, basta preencher o formulário de solicitação de orçamento em nosso site. Nossa equipe entrará em contato para discutir os próximos passos e personalizar um plano que atenda às suas necessidades." },
-            { id: "5", text: "Oferecemos diferentes planos de parceria, adaptados às necessidades e ao tamanho do seu negócio. Durante nossa consulta inicial, discutiremos as opções de plano e encontraremos uma solução que se encaixe no seu orçamento." },
-            { id: "6", text: "Ao listar seu supermercado e suas ofertas no Cartip, você aumenta a visibilidade do seu negócio para um público amplo e interessado em economizar. Isso não apenas atrai mais clientes para o seu supermercado, mas também pode aumentar significativamente suas vendas online e físicas." }
+            { id: "1", text: "Como posso listar meu supermercado no Cartip?", answer: "Para listar seu supermercado e começar a divulgar suas ofertas no Cartip, basta preencher o formulário de solicitação de orçamento em nosso site. Nossa equipe entrará em contato para discutir os próximos passos e personalizar um plano que atenda às suas necessidades." },
+
         ]
+
+
+    },
+    {
+
+        question: [
+
+            { id: "2", text: "Existe um custo para listar meu supermercado no Cartip?", answer: "Oferecemos diferentes planos de parceria, adaptados às necessidades e ao tamanho do seu negócio. Durante nossa consulta inicial, discutiremos as opções de plano e encontraremos uma solução que se encaixe no seu orçamento." },
+
+        ],
+    },
+    {
+
+        question: [
+
+            { id: "3", text: "Como o Cartip pode aumentar minhas vendas?", answer: "Ao listar seu supermercado e suas ofertas no Cartip, você aumenta a visibilidade do seu negócio para um público amplo e interessado em economizar. Isso não apenas atrai mais clientes para o seu supermercado, mas também pode aumentar significativamente suas vendas online e físicas." }
+        ],
     }
 ];
 
 const generalQuestions = [
+
     {
-        title: [{ id: "1", text: "Gerais" }],
+
+
         question: [
-            { id: "7", text: "Os preços e ofertas são atualizados com que frequência?" },
-            { id: "8", text: "Posso confiar na precisão dos preços listados no Cartip?" },
-            { id: "9", text: "Como posso entrar em contato com o Cartip para mais informações?" }
-        ],
-        answer: [
-            { id: "7", text: "Nossos preços e ofertas são atualizados diariamente, garantindo que você tenha acesso às informações mais atuais e possa aproveitar as melhores ofertas do momento." },
-            { id: "8", text: "Sim, nossa equipe se dedica a garantir a precisão dos preços e ofertas listados. Trabalhamos em estreita colaboração com nossos parceiros de supermercado para assegurar que as informações sejam confiáveis e atualizadas." },
-            { id: "9", text: "Se você tiver mais perguntas ou precisar de assistência, pode nos contatar através do formulário de contato em nosso site, ou enviar um e-mail diretamente para nossa equipe de suporte. Estamos sempre aqui para ajudar!" }
+            { id: "1", text: "Os preços e ofertas são atualizados com que frequência?", answer: "Nossos preços e ofertas são atualizados diariamente, garantindo que você tenha acesso às informações mais atuais e possa aproveitar as melhores ofertas do momento." },
+
         ]
+
+
+    },
+    {
+
+        question: [
+
+            { id: "2", text: "Posso confiar na precisão dos preços listados no Cartip?", answer: "Sim, nossa equipe se dedica a garantir a precisão dos preços e ofertas listados. Trabalhamos em estreita colaboração com nossos parceiros de supermercado para assegurar que as informações sejam confiáveis e atualizadas." },
+
+        ],
+    },
+    {
+
+        question: [
+
+            { id: "3", text: "Como posso entrar em contato com o Cartip para mais informações?", answer: "Se você tiver mais perguntas ou precisar de assistência, pode nos contatar através do formulário de contato em nosso site, ou enviar um e-mail diretamente para nossa equipe de suporte. Estamos sempre aqui para ajudar!" }
+        ],
     }
 ];
 
@@ -73,11 +97,48 @@ export default function FaqSection(question, answer) {
 
             <h2 className="text-2xl text-white font-bold">Principais Dúvidas</h2>
 
-            <h3 className="text-white text-xl justify-self-left font-bold" >Para Consumidores (B2C)</h3>
+            <div className="py-8">
 
-            {consumerQuestions.map((info, index) => (
-                <FaqQuestion key={index} {...info} />
-            ))}
+                <div className="flex w-[70vw] justify-start">
+
+                    <h3 className="text-white text-xl justify-self-left font-bold" >Para Consumidores (B2C)</h3>
+
+                </div>
+
+                {consumerQuestions.map((info, index) => (
+                    <FaqQuestion key={index} {...info} />
+                ))}
+
+            </div>
+
+            <div className="py-8">
+
+                <div className="flex w-[70vw] justify-start">
+
+                    <h3 className="text-white text-xl justify-self-left font-bold" >Para Supermercados (B2B)</h3>
+
+                </div>
+
+                {businessQuestions.map((info, index) => (
+                    <FaqQuestion key={index} {...info} />
+                ))}
+
+            </div>
+
+            <div className="py-8">
+
+                <div className="flex w-[70vw] justify-start">
+
+                    <h3 className="text-white text-xl justify-self-left font-bold" >Gerais</h3>
+
+                </div>
+
+                {generalQuestions.map((info, index) => (
+                    <FaqQuestion key={index} {...info} />
+                ))}
+
+            </div>
+
 
         </section>
     )

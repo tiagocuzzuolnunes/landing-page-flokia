@@ -32,7 +32,7 @@ export default function FaqQuestion({  question, answer }) {
 
                         </div>
                         <div
-                            className={`transition-all duration-1000 ${isSelected === index ? "h-[120px] py-4" : "h-0"} overflow-hidden ease-in-out`}
+                            className={`transition-all duration-800 ${isSelected === index ? "h-auto py-4" : "h-0"} overflow-hidden ease-in-out`}
                             style={{ backgroundColor: isSelected === index ? "#ffffff" : "transparent" }}
                         >
 
