@@ -41,7 +41,7 @@ export default function ContactSection() {
                         <ContactTextInput label="E-mail para Contato" placeholder="Insira o seu e-mail" isRequired={true} />
                         <ContactTextInput label="Número de Telefone" placeholder="Insira o seu número" isRequired={true} />
                         <ContactTextInput label="Cidade" placeholder="Insira a sua cidade" isRequired={true} />
-                        <ContactTextInput label="Estado" placeholder="Insira o seu eestado" isRequired={true} />
+                        <ContactTextInput label="Estado" placeholder="Insira o seu estado" isRequired={true} />
                     </div>
                     <div>
 
@@ -51,6 +51,8 @@ export default function ContactSection() {
             <article className="grid grid-cols-3">
                 <div>
                     <ContactSelectInput label="Quais categorias de produtos você está mais interessado em comprar?" options={["Alimentos e Bebidas", "Produtos de Limpeza", "Higiene Pessoal", "Outros (Por favor, especifique)"]} />
+                    <ContactSelectInput label="Com que frequência você faz compras de supermercado?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
+                    <ContactTextInput label="Qual é o orçamento médio mensal para compras de supermercado?" placeholder="Descreva" isRequired={false} />
                     
                 </div>
                 <div>
