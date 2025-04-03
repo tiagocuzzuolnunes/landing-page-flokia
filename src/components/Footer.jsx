@@ -91,9 +91,17 @@ function Footer() {
 
                     <div className="mt-1 flex flex-row text-left w-full mb-4 gap-1">
 
-                        <SocialLogo src="/instagramLogo.svg" alt="Logo Instagram. Clique para entrar no Instagram da Flokia" />
+                        <a target="_blank" href="https://www.instagram.com/flokia.startup?igsh=MWkyaHExYTh4bDl6Zw%3D%3D&utm_source=qr">
 
-                        <SocialLogo src="/youtubeLogo.svg" alt="Logo Youtube. Clique para entrar no Youtube da Flokia" />
+                            <SocialLogo src="/instagramLogo.svg" alt="Logo Instagram. Clique para entrar no Instagram da Flokia" />
+
+                        </a>
+
+                        <a target="_blank" href="https://www.youtube.com/@Flokia-m8q">
+
+                            <SocialLogo src="/youtubeLogo.svg" alt="Logo Youtube. Clique para entrar no Youtube da Flokia" />
+
+                        </a>
 
                     </div>
 
@@ -106,10 +114,16 @@ function Footer() {
                     </p>
 
                     <div className="mt-1 flex flex-row text-left w-full mb-4 gap-1">
+                        <a target="_blank" href="https://www.youtube.com/@Flokia-m8q">
 
-                        <SocialLogo src="/appleLogo.svg" alt="Logo da Apple. Clique para instalação de app IOS" className="w-8" />
+                            <SocialLogo src="/appleLogo.svg" alt="Logo da Apple. Clique para instalação de app IOS" className="w-8" />
 
-                        <SocialLogo src="/androidLogo.svg" alt="Logo da Android. Clique para instalação de app Android" className="w-8" />
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/@Flokia-m8q">
+
+                            <SocialLogo src="/androidLogo.svg" alt="Logo da Android. Clique para instalação de app Android" className="w-8" />
+
+                        </a>
 
                     </div>
 
@@ -128,18 +142,22 @@ function Footer() {
             <div className="w-full grid grid-cols-2 items-center">
 
                 <span className="text-sm text-left w-full mt-5 justify-self-start">
-                    CNPJ: 097738538593 / Rua Capote, 1º andar - São Paulo - SP
+                    CNPJ: 44.547.191/0001-81 / São Mateus, ES
                 </span>
 
                 <p className="text-sm mt-8 mb-4 justify-self-end">
-                    © Copyrights 2024 - Todos os direitos reservados.
+                    © Copyrights 2025 - Todos os direitos reservados.
                 </p>
 
             </div>
 
+
             <div className="mb-4 mt-16">
+
                 <img src="/FlokiaLogo2.svg" alt="Logo da Flokia" className="max-w-[15vw]" />
+
             </div>
+
 
         </section>
     );
