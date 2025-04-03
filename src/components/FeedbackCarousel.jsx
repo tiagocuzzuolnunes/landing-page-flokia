@@ -64,7 +64,7 @@ export default function FeedbackCarousel() {
     return (
         <section className="flex py-24 px-6 gap-5 bg-white">
 
-            <CarouselButton src={"arrowLeft.svg"} />
+            {/* <CarouselButton src={"arrowLeft.svg"} /> */}
 
             <motion.div ref={carousel} className="cursor-grab overflow-hidden" whileTap={{ cursor: "grabbing" }}>
                 <motion.div className="flex"
@@ -95,7 +95,7 @@ export default function FeedbackCarousel() {
 
                 </motion.div>
             </motion.div>
-            <CarouselButton src={"/arrowRight.svg"} />
+            {/* <CarouselButton src={"/arrowRight.svg"} /> */}
         </section>
     )
 };
