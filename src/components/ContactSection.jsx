@@ -1,20 +1,21 @@
 import ContactTextInput from "./ContactTextInput";
 import ContactSelectInput from "./ContactSelectInput";
+import MainButton from "./MainButton";
 
 export default function ContactSection() {
 
     return (
         <section className="bg-primary-background h-auto py-16 px-8">
 
-            <div className="grid grid-cols-4 gap-4">
-                <article className="col-span-2 col-start-2 text-center py-16">
+            <div className="grid sm:grid-cols-4 gap-4">
+                <article className="col-span-2 sm:col-start-2 text-center pt-16 pb-8">
                     <div className="justify-self-center ">
-                        <h2 className="text-2xl font-semibold">Saiba o que o <span className="text-primary-normal">Cartip</span> pode fazer</h2>
+                        <h2 className="text-2xl font-semibold pb-4">Saiba o que o <span className="text-primary-normal">Cartip</span> pode fazer</h2>
                         <p>Está pronto para transformar a maneira como seu supermercado alcança novos clientes<br /> ou como você faz suas compras de supermercado? <br />Solicite seu orçamento grátis agora e descubra o poder do <span className="text-primary-normal">Cartip</span> </p>
                         <p>Preencha o formulário abaixo e dê o primeiro passo para economizar mais e aumentar suas vendas!</p>
                     </div>
                 </article>
-                <article className="col-span-2">
+                <article className="col-span-2 py-4">
                     <h4 className="pb-2 font-semibold">Instruções para o preenchimento</h4>
                     <div className="rounded-md bg-white px-4">
                         <ul>
@@ -54,7 +55,7 @@ export default function ContactSection() {
                     <ContactSelectInput label="Quais categorias de produtos você está mais interessado em comprar?" options={["Alimentos e Bebidas", "Produtos de Limpeza", "Higiene Pessoal", "Outros (Por favor, especifique)"]} />
                     <ContactSelectInput label="Com que frequência você faz compras de supermercado?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
                     <ContactTextInput label="Qual é o orçamento médio mensal para compras de supermercado?" placeholder="Descreva" isRequired={false} />
-                    
+
                 </div>
                 <div className="pt-8">
                     <h4 className="pb-2 pl-4 font-semibold">Para Supermercados (B2B)</h4>
@@ -71,6 +72,28 @@ export default function ContactSection() {
 
                 </div>
             </article>
+            <div className="flex justify-center">
+
+                <MainButton content={"Enviar"} />
+
+            </div>
+
+            <article className="w-full flex flex-col items-center">
+                <h4 className="pt-16 pb-2 text-4xl font-semibold">Entre em contato</h4>
+                <a target="_blank" href="https://wa.me/5527996420246?text=Olá,%20tenho%20interesse%20em%20tirar%20dúvidas!">
+
+                    <p className="pt-3 text-xl hover:text-primary-normal hover:underline active:underline active:text-primary-normal">Telefone: (27) 99642-0246</p>
+
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=flokkia.startup@gmail.com.com&su=Minha Dúvida&body=Escreva Aqui" target="_blank">
+
+                    <p className="pt-3 text-xl hover:text-primary-normal hover:underline active:underline active:text-primary-normal">Email: flokkia.startup@gmail.com</p>
+
+                </a>
+
+            </article>
+
 
         </section>
     )
