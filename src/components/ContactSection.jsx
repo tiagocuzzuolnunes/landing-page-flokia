@@ -5,7 +5,7 @@ import MainButton from "./MainButton";
 export default function ContactSection() {
 
     return (
-        <section className="bg-primary-background h-auto py-16 px-8">
+        <section id="budget" className="bg-primary-background h-auto py-16 px-8">
 
             <div className="grid sm:grid-cols-4 gap-4">
                 <article className="col-span-2 sm:col-start-2 text-center pt-16 pb-8">
@@ -78,8 +78,8 @@ export default function ContactSection() {
 
             </div>
 
-            <article className="w-full flex flex-col items-center">
-                <h4 className="pt-16 pb-2 text-4xl font-semibold">Entre em contato</h4>
+            <article id="contact" className="w-full pt-12 flex flex-col items-center">
+                <h4 className="pt-12 pb-2 text-4xl font-semibold">Entre em contato</h4>
                 <a target="_blank" href="https://wa.me/5527996420246?text=Olá,%20tenho%20interesse%20em%20tirar%20dúvidas!">
 
                     <p className="pt-3 text-xl hover:text-primary-normal hover:underline active:underline active:text-primary-normal">Telefone: (27) 99642-0246</p>

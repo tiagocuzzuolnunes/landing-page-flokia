@@ -25,7 +25,7 @@ const CartipInfo2 = [
 
 export default function ShowcaseSection() {
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-2 w-full justify-items-center items-center bg-white px-8">
+        <section id="howItWorks" className="grid grid-cols-1 sm:grid-cols-2 w-full justify-items-center items-center bg-white px-8">
             <img src="/mockupPhotoShowcase.png" alt="Mulher verificando o site do Cartip" className="w-[70%]"/>
             <div className="flex items-center relative object-scale-down w-full h-auto min-w-[140px]">
                 <img src="frontiPhone.png" alt="Iphone com Cartip na frente" className="w-[15vw] h-auto mx-auto left-35 z-1"/>
