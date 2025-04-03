@@ -34,13 +34,13 @@ export default function ContactSelectInput({ label, options }) {
                     <option disabled selected>Selecione uma opção</option>
                     {elements}
                 </select>
-                {selectedOption === "Outros (Por favor, especifique)" && (
+                {(selectedOption === "Outros (Por favor, especifique)" || selectedOption === "Sim (Se sim, por favor, descreva)")  && (
                     <div >
 
                         <input
                             type="text"
                             className="block w-full bg-white h-24 border-2 border-neutral-normal mt-2 px-2"
-                            placeholder="Especifique aqui..."
+                            placeholder="Descreva"
                         />
 
                     </div>

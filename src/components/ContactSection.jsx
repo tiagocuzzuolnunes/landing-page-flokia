@@ -58,8 +58,8 @@ export default function ContactSection() {
                 </div>
                 <div className="pt-8">
                     <h4 className="pb-2 pl-4 font-semibold">Para Supermercados (B2B)</h4>
-                    <ContactSelectInput label="Você já possui uma estratégia de marketing digital?" options={["Alimentos e Bebidas", "Produtos de Limpeza", "Higiene Pessoal", "Outros (Por favor, especifique)"]} />
-                    <ContactSelectInput label="Qual é o principal objetivo com nossos serviços?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
+                    <ContactSelectInput label="Você já possui uma estratégia de marketing digital?" options={["Sim (Se sim, por favor, descreva)", "Não"]} />
+                    <ContactSelectInput label="Qual é o principal objetivo com nossos serviços?" options={["Aumentar a visibilidade online", "Atrair mais clientes para a loja física", "Expandir vendas online", "Outros (Por favor, especifique)"]} />
                     <ContactSelectInput label="Qual é o tamanho do seu supermercado?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
                     <ContactTextInput label="Qual é o orçamento médio mensal para compras de supermercado?" placeholder="Descreva" isRequired={false} />
 
