@@ -10,7 +10,7 @@ export default function ContactTextInput({label, placeholder, isRequired = false
             <div className="px-4 py-2">
                 <div className={`max-w-full flex flex-row gap-3 items-center ${isRequired ? 'justify-between' : null}`}>
 
-                <h4 className="text-sm text-neutral-darker">
+                <h4 className="text-sm text-neutral-darker pb-1">
                     {label}
                 </h4>
                 {isRequired ? <span className="text-red-500 pr-5">*</span> : null}

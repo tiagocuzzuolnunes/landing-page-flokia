@@ -21,25 +21,29 @@ export default function ContactSelectInput({ label, options }) {
         <div className="px-4 py-2">
             <div className="max-w-full flex flex-row gap-3 items-center">
 
-                <h4 className="text-sm text-neutral-darker">
+                <h4 className="text-sm text-neutral-darker pb-1">
                     {label}
                 </h4>
 
 
             </div>
-            <div className={`relative w-full h-12 bg-white placeholder:pl-2 rounded-lg border-2 border-neutral-normal `}>
+            <div className="relative w-full min-h-12 placeholder:pl-2">
 
-                <select className="appearance-none text-neutral-darker pl-2 bg-white w-full h-full" onChange={(e) => setSelectedOption(e.target.value)}
+                <select className="appearance-none rounded-lg text-neutral-darker border-2 border-neutral-normal pl-2 bg-white w-full h-12" onChange={(e) => setSelectedOption(e.target.value)}
                 >
                     <option disabled selected>Selecione uma opção</option>
                     {elements}
                 </select>
                 {selectedOption === "Outros (Por favor, especifique)" && (
-                    <input
-                        type="text"
-                        className="block w-full bg-white h-24 border-2 border-neutral-normal mt-2 px-2"
-                        placeholder="Especifique aqui..."
-                    />
+                    <div >
+
+                        <input
+                            type="text"
+                            className="block w-full bg-white h-24 border-2 border-neutral-normal mt-2 px-2"
+                            placeholder="Especifique aqui..."
+                        />
+
+                    </div>
 
                 )}
 

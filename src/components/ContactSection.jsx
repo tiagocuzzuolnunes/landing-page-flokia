@@ -1,4 +1,4 @@
-import ContactTextInput from "./ContacTextInput";
+import ContactTextInput from "./ContactTextInput";
 import ContactSelectInput from "./ContactSelectInput";
 
 export default function ContactSection() {
@@ -48,18 +48,27 @@ export default function ContactSection() {
                     </div>
                 </article>
             </div>
-            <article className="grid grid-cols-3">
-                <div>
+            <article className="py-4 grid md:grid-cols-3">
+                <div className="pt-8">
+                    <h4 className="pb-2 pl-4 font-semibold">Para Consumidores (B2C)</h4>
                     <ContactSelectInput label="Quais categorias de produtos você está mais interessado em comprar?" options={["Alimentos e Bebidas", "Produtos de Limpeza", "Higiene Pessoal", "Outros (Por favor, especifique)"]} />
                     <ContactSelectInput label="Com que frequência você faz compras de supermercado?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
                     <ContactTextInput label="Qual é o orçamento médio mensal para compras de supermercado?" placeholder="Descreva" isRequired={false} />
                     
                 </div>
-                <div>
-                    
+                <div className="pt-8">
+                    <h4 className="pb-2 pl-4 font-semibold">Para Supermercados (B2B)</h4>
+                    <ContactSelectInput label="Você já possui uma estratégia de marketing digital?" options={["Alimentos e Bebidas", "Produtos de Limpeza", "Higiene Pessoal", "Outros (Por favor, especifique)"]} />
+                    <ContactSelectInput label="Qual é o principal objetivo com nossos serviços?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
+                    <ContactSelectInput label="Qual é o tamanho do seu supermercado?" options={["Semanalmente", "Quinzenalmente", "Mensalmente", "Outros (Por favor, especifique)"]} />
+                    <ContactTextInput label="Qual é o orçamento médio mensal para compras de supermercado?" placeholder="Descreva" isRequired={false} />
+
                 </div>
-                <div>
-                    
+                <div className="pt-8">
+                    <h4 className="pb-2 pl-4 font-semibold">Gerais</h4>
+                    <ContactTextInput label="Há alguma informação adicional que você considera importante para a elaboração do seu orçamento?" placeholder="Descreva" isRequired={false} />
+                    <ContactTextInput label="Quais são suas expectativas em relação aos resultados com o Cartip?" placeholder="Descreva" isRequired={false} />
+
                 </div>
             </article>
 
