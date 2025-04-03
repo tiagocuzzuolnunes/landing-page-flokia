@@ -6,9 +6,9 @@ function Footer() {
     return (
         <section className="bg-primary-darker text-white flex flex-col justify-center items-center py-8 px-16">
 
-            <div className="grid grid-cols-8">
+            <div className="grid grid-cols-2 md:grid-cols-8">
 
-                <article className="col-span-2">
+                <article className="md:col-span-2 pb-4">
 
                     <h4 className="cursor-default font-semibold text-md">
                         Destaques
@@ -73,7 +73,7 @@ function Footer() {
 
                 </article>
 
-                <article className="col-span-2">
+                <article className="md:col-span-2">
 
                     <h4 className="cursor-default font-semibold text-lg">
                         Precisa de ajuda?
@@ -83,7 +83,7 @@ function Footer() {
 
                 </article>
 
-                <article>
+                <article className="md:col-span-2 md:px-4">
 
                     <p className="font-semibold text-md text-left w-full">
                         Siga-nos
@@ -107,10 +107,10 @@ function Footer() {
 
                 </article>
 
-                <article>
+                <article className="md:col-span-2 md:px-4">
 
                     <p className="font-semibold text-md text-left w-full">
-                        Baixe nosso aplicativo
+                        Baixe nosso app
                     </p>
 
                     <div className="mt-1 flex flex-row text-left w-full mb-4 gap-1">
