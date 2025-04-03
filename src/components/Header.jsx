@@ -10,7 +10,7 @@ export default function Header() {
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Sobre Nós</li>
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Como Funciona</li>
                     <li className="hover:text-neutral-dark-hover cursor-pointer">Solicitar Orçamento</li>
-                    <li><MainButton content="Cadastre-se"/></li>
+                    <li><MainButton content="Entre em Contato"/></li>
                 </ul>
             </nav>
         </header>
